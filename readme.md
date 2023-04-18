@@ -11,7 +11,7 @@ PET-DOTATATE scan and attenuation-correction CT pair.
 - `` PET & CT `` : trained with two inputs, 3D PET image and it's registered Attenuation Correction CT. 
 - ``onnx_models`` : these models are 5 fold ensemble models coverted from their nnUnet structure to the model agnostic onnx version. See documentation [here] (https://onnx.ai)
 
-Other pretrained models offered by the original nnUnet authors can be found [here] (https://zenodo.org/record/4485926#.ZD7VhC-B30o) 
+Other pretrained models offered by the original nnUnet authors can be found [here](https://zenodo.org/record/4485926#.ZD7VhC-B30o) 
 
 
 For more information on this model and its training, please read the following paper:
