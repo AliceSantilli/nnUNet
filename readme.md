@@ -1,4 +1,34 @@
-# Welcome to the new nnU-Net!
+# Automated Full Body Tumor Segmentation in PET/CT for Neuroendocrine cancer using nnU-Net!
+
+In this repository we share models trained on a large annotated dataset of PET DOTATATE images using the nnU-Net V1 pipeline. This version of the pipeline can be found [here](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1). Given the modularity of the nnU-net framework, we make these models public with the hopes of allowing other, institutions to benefit from our pre-training and to improve upon and verify the generalizability of the models. 
+
+These models were trained at [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org). The dataset was comprised of 915 scan volumes, each with a
+PET-DOTATATE scan and attenuation-correction CT pair. 
+
+## Models 
+
+- `` PET ``
+- `` PET & CT ``
+- ``onnx_models`` : these models are 5 fold ensemble models coverted from their nnUnet structure to the model agnostic onnx version. See documentation [here] (https://onnx.ai)
+
+
+
+For more information on this model and its training, please read the following paper:
+
+``Santilli, A., Panyam, P., Autz, A., Wray, R., Phillip, J., Elnajjar, P., Swinburne, N. and Mayerhoefer, M. (2023) Automated Full Body Tumor Segmentation in DOTATATE PET/CT for Neuroencodrine Cancer Patients. IJCARS ``
+
+
+Please also cite this paper if you are using out pretrained model for your research!
+
+
+
+
+
+
+
+
+
+# From original Authors: Welcome to the new nnU-Net!
 
 Click [here](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) if you were looking for the old one instead.
 
