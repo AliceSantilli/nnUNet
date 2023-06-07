@@ -15,6 +15,9 @@ PET-DOTATATE scan and attenuation-correction CT pair.
 
 Other pretrained models offered by the original nnUnet authors can be found [here](https://zenodo.org/record/4485926#.ZD7VhC-B30o) 
 
+## Custom Trainers 
+
+One of our experiments required weighting the data points differently. In the ``weightedTraining_NETFiles`` folder you will find a custom trainer and loss function file to do so. This matches the structure used in nnU-net v1 and requires only one more cfg file that holds the weights for each data point. These weights are in the same order as the images are labelled (eg img_001.nii.gz). 
 
 For more information on this model and its training, please read the following paper:
 
