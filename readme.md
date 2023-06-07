@@ -1,6 +1,6 @@
 # Automated Full Body Tumor Segmentation in PET/CT for Neuroendocrine cancer using nnU-Net!
 
-#### Update May 1 2023: The upload of the models described below is awaiting the results of a journal submission that is currently in the review process. 
+#### Update June 2023: The models described below can now be found on the zenodo page : https://zenodo.org/record/7843469 
 
 In this repository we share models trained on a large annotated dataset of PET DOTATATE images using the nnU-Net V1 pipeline. This version of the pipeline can be found [here](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1). Given the modularity of the nnU-net framework, we make these models public with the hopes of allowing other, institutions to benefit from our pre-training and to improve upon and verify the generalizability of the models. 
 
@@ -11,15 +11,14 @@ PET-DOTATATE scan and attenuation-correction CT pair.
 
 - `` PET `` : trained with one input of a 3D PET image
 - `` PET & CT `` : trained with two inputs, 3D PET image and it's registered Attenuation Correction CT. 
-- ``onnx_models`` : these models are 5 fold ensemble models coverted from their nnUnet structure to the model agnostic onnx version. See documentation [here] (https://onnx.ai)
+- ``onnx_models`` : these models are 5 fold ensemble models coverted from their nnUnet structure to the model agnostic onnx version. See documentation here (https://onnx.ai)
 
 Other pretrained models offered by the original nnUnet authors can be found [here](https://zenodo.org/record/4485926#.ZD7VhC-B30o) 
 
 
 For more information on this model and its training, please read the following paper:
 
-``Santilli, A., Panyam, P., Autz, A., Wray, R., Phillip, J., Elnajjar, P., Swinburne, N. and Mayerhoefer, M. (2023) Automated Full Body Tumor Segmentation in DOTATATE PET/CT for Neuroencodrine Cancer Patients. IJCARS ``
-
+``Santilli, A., Panyam, P., Autz, A., Wray, R., Phillip, J., Elnajjar, P., Swinburne, N. and Mayerhoefer, M. (2023) Automated Full Body Tumor Segmentation in DOTATATE PET/CT for Neuroencodrine Cancer Patients. IJCARS `` DOI: 10.1007/s11548-023-02968-1
 
 Please also cite this paper if you are using out pretrained model for your research!
 
