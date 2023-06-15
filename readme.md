@@ -15,6 +15,11 @@ PET-DOTATATE scan and attenuation-correction CT pair.
 
 Other pretrained models offered by the original nnUnet authors can be found [here](https://zenodo.org/record/4485926#.ZD7VhC-B30o) 
 
+## Running Inference on your own data 
+
+One fast way to do this is to use the two scripts added to the ``infer_on_onnx_models`` folder. This folder contains a main function that needs to be edited to point to the desired files (PET and CT). It can read either DICOM directories or nifti files. This function can easily be edited to loop through an entire dataset by changing the way you provide the filename to the preprocessing step. 
+
+
 ## Custom Trainers 
 
 One of our experiments required weighting the data points differently. In the ``weightedTraining_NETFiles`` folder you will find a custom trainer and loss function file to do so. This matches the structure used in nnU-net v1 and requires only one more cfg file that holds the weights for each data point. These weights are in the same order as the images are labelled (eg img_001.nii.gz). 
