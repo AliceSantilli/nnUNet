@@ -17,7 +17,7 @@ Other pretrained models offered by the original nnUnet authors can be found [her
 
 ## Running Inference on your own data 
 
-One fast way to do this is to use the two scripts added to the ``infer_on_onnx_models`` folder. This folder contains a main function that needs to be edited to point to the desired files (PET and CT). It can read either DICOM directories or nifti files. This function can easily be edited to loop through an entire dataset by changing the way you provide the filename to the preprocessing step. 
+One fast way to do this is to use the two scripts added to the ``infer_on_onnx_models`` folder. The Jupyter notebook file is self contained and can be run with nifti or dicom images. The other functions in this folder can be cosulted for code. These functions can easily be edited to loop through an entire dataset by changing the way you provide the filename to the preprocessing step. 
 
 
 ## Custom Trainers 
